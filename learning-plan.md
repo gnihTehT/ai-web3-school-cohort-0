@@ -1,123 +1,123 @@
 # 📚 学习计划 — ShadowDoge
 
-> 每天 0.5~1h，**4 周**冲刺黑客松 Demo  
+> 基于 WCB 实际课程数据。每天 0.5~1h，4 周冲刺黑客松 Demo
 > 方向：综合探索 AI × Web3，产出可演示原型
 
 ---
 
-## 总体路线
+## ✅ 已完成
+
+| Phase | Chapter | 进度 |
+|-------|---------|------|
+| Phase 1: The Landscape | Bridge Connection | ✅ Done |
+| Phase 2: AI Basics | LLM | ✅ Done |
+| **合计** | **2/24 章节** | **8%** |
+
+---
+
+## 🎯 4 周冲刺路线
 
 ```
-第1周 ─ AI 基础查漏补缺 ─→ LLM / Prompt / Context / Agent (快速过)
-                    ↓
-第2周 ─ Web3 基础补齐 ──→ Wallet / Smart Contract / AA 
-                    ↓
-第3周 ─ 交叉核心 ──→ Chain-aware Context / Web3 Tool Use / Agent Wallet → 锁定 Demo 方向
-                    ↓
-第4周 ─ Demo 冲刺 ──→ 黑客松原型开发 + 打磨
+剩余时间：3.5 周（5/23 周末 → 6/14）
 ```
 
----
+### 📅 本周末 5/23(六)~5/24(日) — AI 收尾
 
-## 📅 Week 1 — AI 基础查漏补缺
+**目标：** 快速扫完 Phase 2 剩余章节，补概念盲区
 
-**目标**：快速确认 AI 模块的知识无盲区，重点吃透 Agent 相关章节。
+| Day | 章节 | 耗时 | 做什么 |
+|-----|------|------|--------|
+| 今晚 | **Prompt** | ~20min | 快速过，确认无盲区 |
+| 今晚 | **Context** | ~20min | 上下文窗口/过期/可信度 |
+| 周日 | **Agent** | ~30min | **重点** — tool calling、multi-step |
+| 周日 | RAG + MCP + Eval | ~20min | 概念了解，3 合一快速过 |
 
-| Day | 主题 | Handbook 链接 | 做什么 |
-|-----|------|--------------|--------|
-| 1 | LLM | [ai/llm/](https://aiweb3.school/zh/handbook/ai/llm/) | 快速过，查漏补缺 |
-| 2 | Prompt | [ai/prompt/](https://aiweb3.school/zh/handbook/ai/prompt/) | 试一个熟悉的结构化 prompt |
-| 3 | Context | [ai/context/](https://aiweb3.school/zh/handbook/ai/context/) | 上下文窗口、过期、可信度 |
-| 4 | RAG | [ai/rag/](https://aiweb3.school/zh/handbook/ai/rag/) | RAG vs 纯 Context |
-| 5 | Agent | [ai/agent/](https://aiweb3.school/zh/handbook/ai/agent/) | **重点**：tool calling、multi-step |
-| 6 | MCP / Evaluation | [ai/mcp/](https://aiweb3.school/zh/handbook/ai/mcp/) / [ai/evaluation/](https://aiweb3.school/zh/handbook/ai/evaluation/) | 了解协议层和评估 |
-
-**周产出**：确认最想结合 Demo 的 AI 能力方向
+> 🔑 重点：Context 和 Agent 是你的 Demo 基石，值得多花时间
 
 ---
 
-## 📅 Week 2 — Web3 基础补齐
+### 📅 Week 2: 5/25(一)~5/31(日) — Web3 基础
 
-**目标**：补齐 Web3 侧知识短板，重点 Account Abstraction。
+**目标：** 补齐 Web3 侧知识短板，重点 AA 和 Security
 
-| Day | 主题 | Handbook 链接 | 做什么 |
-|-----|------|--------------|--------|
-| 1 | Network | [web3/network/](https://aiweb3.school/zh/handbook/web3/network/) | 区块/共识/L2/RPC 概念回顾 |
-| 2 | Crypto + Wallet | [web3/cryptography/](https://aiweb3.school/zh/handbook/web3/cryptography/) + [web3/wallet/](https://aiweb3.school/zh/handbook/web3/wallet/) | **实操**：用 ethers/viem 写签名脚本 |
-| 3 | Smart Contract | [web3/smart-contract/](https://aiweb3.school/zh/handbook/web3/smart-contract/) | 部署一个简单合约到测试网 |
-| 4 | Account Abstraction | [web3/account-abstraction/](https://aiweb3.school/zh/handbook/web3/account-abstraction/) | **重点**：Smart Account / Session Key |
-| 5 | Indexing | [web3/indexing/](https://aiweb3.school/zh/handbook/web3/indexing/) | 事件索引与链上数据查询 |
-| 6 | Security | [web3/security/](https://aiweb3.school/zh/handbook/web3/security/) | 权限与风险边界 |
-
-**周产出**：确认 Demo 的链上交互方案
+| Day | 章节 | 优先级 | 实操 |
+|-----|------|--------|------|
+| 一 | **Network** | 🟢 回顾 | 区块/L2/RPC |
+| 二 | **Crypto + Wallet** | 🟡 重点 | 用 viem/ethers 写签名脚本 |
+| 三 | **Smart Contract** | 🟡 重点 | 部署一个合约到测试网 |
+| 四 | **Account Abstraction** | 🔴 **关键** | Smart Account / Session Key |
+| 五 | **Indexing** | 🟢 了解 | 事件索引 |
+| 六 | **Security** | 🔴 **关键** | 权限与风险边界 |
+| 日 | 周回顾 | 🎯 | 更新进度 + 选 Demo 方向概念 |
 
 ---
 
-## 📅 Week 3 — AI × Web3 Bridge（核心交叉）
+### 📅 Week 3: 6/1(一)~6/7(日) — Bridge 核心交叉 🔥
 
-**目标**：精读 Bridge 核心章节，锁定 Demo 技术方案。
+**目标：** 精读 Bridge 核心章节，锁定 Demo 技术方案
 
-按优先级阅读：
-
-| Day | 主题 | 优先级 | 为什么重要 |
+| Day | 章节 | 优先级 | 为什么重要 |
 |-----|------|--------|-----------|
-| 1 | [Chain-aware Context](https://aiweb3.school/zh/handbook/bridge/chain-aware-context/) | 🔴 必读 | Agent 怎么"看到"链上状态 |
-| 2 | [Web3 Tool Use](https://aiweb3.school/zh/handbook/bridge/web3-tool-use/) | 🔴 必读 | RPC/钱包/合约工具编排 |
-| 3 | [Agent Workflow](https://aiweb3.school/zh/handbook/bridge/agent-workflow/) | 🔴 必读 | 哪些自动化、哪些留人环 |
-| 4 | [Agent Wallet](https://aiweb3.school/zh/handbook/bridge/agent-wallet/) 🔹 [AI Security](https://aiweb3.school/zh/handbook/bridge/ai-security/) | 🔴 必读 | Agent 权限与安全边界 |
-| 5 | [Machine Payment](https://aiweb3.school/zh/handbook/bridge/machine-payment/) | 🟡 重点 | AI 自动支付场景 |
-| 6 | [Settlement & Escrow](https://aiweb3.school/zh/handbook/bridge/settlement-and-escrow/) 🎯 **定方向** | 🟡 重点 | 结算 + 锁定 Demo 方向 |
+| 一 | **Chain-aware Context** | 🔴 必读 | Agent 如何读取链上状态 |
+| 二 | **Web3 Tool Use** | 🔴 必读 | RPC/钱包/合约工具编排 |
+| 三 | **Agent Workflow** | 🔴 必读 | 人机协作边界 |
+| 四 | **Agent Wallet** | 🔴 必读 | Agent 权限管理 |
+| 五 | **Machine Payment** + **Settlement** | 🟡 重点 | 自动支付与结算 |
+| 六 | **AI Security** + **Verifiable AI** | 🟡 重点 | 安全与可验证 |
+| 日 | **定方向！** | 🎯 | 锁定 Demo 方案 |
 
-**周产出**：选定 Demo 方向，在 `hackathon/` 下输出技术方案文档
+> 🔑 前四天必须吃透，后半根据 Demo 方向选读
 
 ---
 
-## 📅 Week 4 — Demo 冲刺
+### 📅 Week 4: 6/8(一)~6/14(日) — Demo 冲刺 🚀
 
-**目标**：从概念到可演示的黑客松原型
+**目标：** 从概念到可演示的黑客松原型
 
 | 阶段 | 内容 | 产出 |
 |------|------|------|
-| Day 1-2 | 技术选型 + 架构 + 核心 Sprint | 可运行的最小版本 |
-| Day 3-4 | 功能完善 + 边角处理 | 稳定版本 |
-| Day 5-6 | Demo 打磨 + README + 录屏 | 交付物准备 |
+| 一 ~ 二 | 技术选型 + 架构 + 核心代码 | 可运行最小版本 |
+| 三 ~ 四 | 功能完善 + 边角处理 | 稳定版本 |
+| 五 ~ 六 | Demo 打磨 + README + 录屏 | 交付物打包 |
 
-### Demo 方向建议
+### Demo 方向候选
 
-基于你的画像，以下方向值得考虑：
+1. **链上 Agent 助手** — Agent 查链上状态、解释交易、自动签名
+   - 技术栈：Agent Framework + viem/ethers + Smart Account
+   - 参考：Chain-aware Context, Web3 Tool Use, Agent Wallet
 
-1. **链上 Agent 助手** — Agent 查链上状态、解释交易、自动签名执行
-   - 技术栈：Agent SDK + viem/ethers + Smart Account
-   - 参考章节：Chain-aware Context, Web3 Tool Use, Agent Wallet
+2. **AI 自动结算系统** — Agent 完成服务后自动触发支付
+   - 技术栈：Agent + Smart Contract + Session Key
+   - 参考：Machine Payment, Settlement, AA
 
-2. **AI 自动化支付/结算** — Agent 完成服务后自动触发支付
-   - 技术栈：Agent Framework + Smart Contract + Session Key
-   - 参考章节：Machine Payment, Settlement & Escrow, AA
-
-3. **智能体安全沙箱** — 演示 Agent 权限管控、Session Key、Policy
+3. **智能体安全沙箱** — 演示 Agent 权限管控
    - 技术栈：Account Abstraction + Permission Layer
-   - 参考章节：Account Abstraction, AI Security, Agent Wallet
+   - 参考：AA, AI Security, Agent Wallet
 
-4. **链上数据聊天机器人** — 用自然语言查链上数据
+4. **链上数据问答** — 自然语言查链上数据
    - 技术栈：RAG + Indexing + LLM
-   - 参考章节：RAG, Indexing, Chain-aware Context
+   - 参考：RAG, Chain-aware Context
 
 ---
 
-## 📋 每日打卡
+## 📊 总进度追踪
 
-每天在 `daily/` 下创建 `YYYY-MM-DD.md`
-- 打卡用中文，关键术语保留英文
-- 每天 0.5~1h，不求多求持续
-- 遇到问题立刻记下来
-- 每周末回顾 + 调整下周计划
+```
+Phase 1 (Landscape):  ■■■■■■■■■■ 100% (1/1) ✅
+Phase 2 (AI):         ■■░░░░░░░░  14% (1/7) 
+Phase 3 (Web3):       ░░░░░░░░░░   0% (0/7)
+Phase 4 (Bridge):     ░░░░░░░░░░   0% (0/12)
+Phase 5 (Hackathon):  ░░░░░░░░░░   0%
+────────────────────────────────────
+Total:                 ■░░░░░░░░░   8%
+```
 
 ---
 
-## 🎯 Week 4 结束验收
+## 🎯 4 周后验收
 
-- [ ] 读完 Handbook 核心章节（至少 Bridge 必读部分）
+- [ ] Phase 2~4 全部章节完成
+- [ ] 所有学习笔记在 `daily/` 下
 - [ ] Week 3 结束前锁定 Demo 方向
 - [ ] Week 4 结束前 Demo 可演示
-- [ ] GitHub 有 15+ 天的打卡记录
-- [ ] 提交至少 1 份 Handbook Feedback
+- [ ] 提交 ≥1 份 Handbook Feedback
